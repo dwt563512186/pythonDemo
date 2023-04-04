@@ -1,0 +1,69 @@
+INFO:     Started server process [5744]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+INFO:     10.88.11.73:63134 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64527 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64642 - "GET /index.html HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64642 - "GET /static/js/pie.js HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64683 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64643 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64699 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     10.88.11.73:64764 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64830 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64916 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:65037 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:65055 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:65131 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:50265 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:50920 - "GET /index.html HTTP/1.1" 304 Not Modified
+INFO:     10.88.11.73:50920 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:52100 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:52704 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:52708 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64241 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:64692 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:65304 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:65503 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:49158 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:49182 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:60278 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:60307 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:60743 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:52875 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:52951 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.22:57913 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.236:63343 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.236:59405 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:63196 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:63215 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:63337 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.73:63337 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     Started server process [8823]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+INFO:     10.88.11.236:62532 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.236:62642 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.10.137:49648 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.10.137:49703 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.10.137:49925 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK
+INFO:     10.88.11.236:51401 - "GET /marketplace/dp/v1/welfare/all HTTP/1.1" 200 OK

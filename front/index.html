@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link href="css/public.css" rel="stylesheet" type="text/css"/>
+<link href="css/jianlisw.css" rel="stylesheet" type="text/css"/>
+<title>银行账单</title>
+</head>
+<body>
+<!-- banner start -->
+<div class="caption-title">
+    <i class="fl"><img src="images/title-left.png" ></i>
+    <span class="biaoti fl">银行账单</span>
+    <i class="fr"><img src="images/title-right.png" ></i>
+</div>
+<!-- 内容正文 -->
+<div class="zhenwen">
+    <div class="left_zs fl">
+    	<!-- 账单概览 -->
+        <div class="data-box1 left_tb fl">
+            <i class="topL"></i>
+            <i class="topR"></i>
+            <i class="bottomL"></i>
+            <i class="bottomR"></i>
+            <div class="data-title">
+                <b class="data-title-left fl">[</b>
+                <span>账单概览</span>
+                <b class="data-title-right fr">]</b>
+            </div>
+                <!-- 账单概览-->
+            <div class="xmglan">        
+                <ul class="xmgl_heard">
+                    <li>当前</li>
+                    <li class="hove">历史</li>
+                </ul>            
+                <div id="xmgl_cen">              
+                    <div class="xmgl_tb">
+                    	<ul class="xm_cszs">
+                           <li>统计人数:<span id="sumcount"></span>人</li>
+                           <li> 信用额度总和：<span id="sumCred"></span>元</li>
+                           <li>
+                                <p>30以下:<span id="diyi"></span></p>  
+                                <p>40以下:<span id="dier"></span></p>
+                                <p>50以下:<span id="disan"></span></p> 
+                           </li>
+                           <li>
+                           		<p>60以下:<span id="disi"></span></p>
+                                <p>60以上:<span id="diwu"></span></p>
+                           </li>
+                        </ul>
+                    </div> 
+                    <div class="xmgl_tb none">
+                        <ul class="xm_cszs">
+                           <li>统计人数:<span>23000</span>人</li>
+                           <li> 信用额度总和：<span>4024460670</span>元</li>
+                           <li>
+                                <p>30以下:<span>8000</span></p>  
+                                <p>40以下:<span>7000</span></p>
+                                <p>50以下:<span>5000</span></p> 
+                           </li>
+                           <li>
+                           		<p>60以下:<span>2000</span></p>
+                                <p>60以上:<span>1000</span></p>
+                           </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>     
+        </div>     
+    	<!-- 账单人员性别比例 -->
+        <div class="data-box1 left_tb fl mtop40">
+            <i class="topL"></i>
+            <i class="topR"></i>
+            <i class="bottomL"></i>
+            <i class="bottomR"></i>
+            <div class="data-title">
+                <b class="data-title-left fl">[</b>
+                <span>账单人员性别比例</span>
+                <b class="data-title-right fr">]</b>
+            </div>
+                <!-- 账单人员性别比例-->
+            <div class="xmglan">        
+                <div id="lytj" class="lytj"></div>   
+            </div>     
+        </div>
+                
+    </div>
+    
+	  <!--仪表盘等展示-->
+    <div class="center_zs fl">
+        <div class="data-box1 box1-back">
+            <i class="topL"></i>
+            <i class="topR"></i>
+            <i class="bottomL"></i>
+            <i class="bottomR"></i>
+            <div class="data-title">
+                <b class="data-title-left">[</b>
+                <span>账单情况具体展示</span>
+                <b class="data-title-right">]</b>
+            </div>
+            <div class="wgrytj">
+                <span class="wgrytj_bt">AMT的统计</span>
+                <div class="wgrytj_tb">
+                 <div id="xcrytj" style="height:163px"></div>                    
+                </div>
+            </div>
+
+            <div class="wgrytj">
+                <span class="wgrytj_bt">6个月的账单统计</span>
+                <div class="wgrytj_tb">
+                 <div id="gztj" style="height:163px"></div>                    
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!--右侧图表展示 -->
+    <div class="right_zs fl">
+    	 <!-- 巡检风险状态 -->        
+        <div class="data-box1 right_tb ">
+            <i class="topL"></i>
+            <i class="topR"></i>
+            <i class="bottomL"></i>
+            <i class="bottomR"></i>
+            <div class="data-title">
+                <b class="data-title-left">[</b>
+                <span>巡检风险状态</span>
+                <b class="data-title-right">]</b>
+            </div>
+              <!--巡检风险状态-->
+            <div class="ryclts"> 
+              <div id="xjfxzt" style="height:290px"></div>
+            </div>
+              <!--问题等级-->
+            <div class="ryclts">          			
+                <div class="wgrytj">                	
+                	<div class="wenti_dj">
+                    	 <div id="wentidj" style="height:100px"></div>
+                    </div>
+                    <div  class="wenti_bg">
+                    <table width="200" border="1">
+                    <tr>
+                        <td>类别</td>
+                        <td>高中</td>
+                        <td>大学</td>
+                        <td>研究生</td>
+                    </tr>
+                    <tr>
+                        <td>违约数量</td>
+                        <td class="green" id="gaozhong"></td>
+                        <td class="green" id="daxue"></td>
+                        <td class="green" id="yanjiusheng"></td>
+                    </tr>
+                    </table>
+
+                    </div>
+                </div>
+            </div>  
+        </div>  
+    </div>
+
+</div>      
+        
+<div class="h30 clearfix"></div>      
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/monitor_sw.js"></script>
+<script>
+$(function(){
+	//分类选择	
+	$(".xmgl_heard li").click(function(){
+	
+		$(this).attr("class","");
+		$(this).siblings().attr("class","hove");
+		$("#xmgl_cen").find(".xmgl_tb").eq($(this).index()).removeClass("none").siblings().addClass("none")
+	});
+})
+</script>
+
+</html>
