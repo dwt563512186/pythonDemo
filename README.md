@@ -1,2 +1,0 @@
-# pythonDemo
-riscv测试
