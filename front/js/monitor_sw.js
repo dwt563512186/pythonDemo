@@ -7,7 +7,7 @@ var overview; //概览数据
 $(function () {
   //查询6个月的账单数据
   $.ajax({
-    url: "http://127.0.0.1:8082/billing", //请求的url地址
+    url: "http://10.88.10.191:8082/billing", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
@@ -88,7 +88,7 @@ $(function () {
 
   //查询amt的账单数据
   $.ajax({
-    url: "http://127.0.0.1:8082/amt", //请求的url地址
+    url: "http://10.88.10.191:8082/amt", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
@@ -168,7 +168,7 @@ $(function () {
 
   //查询性别比例
   $.ajax({
-    url: "http://127.0.0.1:8082/sexual", //请求的url地址
+    url: "http://10.88.10.191:8082/sexual", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
@@ -254,7 +254,7 @@ $(function () {
 
   //查询不同学历的违约情况
   $.ajax({
-    url: "http://127.0.0.1:8082/qualification", //请求的url地址
+    url: "http://10.88.10.191:8082/qualification", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
@@ -412,7 +412,7 @@ $(function () {
 
   //查询概览数据
   $.ajax({
-    url: "http://127.0.0.1:8082/overview", //请求的url地址
+    url: "http://10.88.10.191:8082/overview", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
