@@ -10,10 +10,10 @@ from sqlalchemy import String, create_engine, Column, Integer
 from sqlalchemy.orm import sessionmaker
 
 # 配置数据库地址：数据库类型+数据库驱动名称://用户名:密码@机器地址:端口号/数据库名
-engine = create_engine('mysql+pymysql://root:123456@47.103.54.72:3306/pythonDemo')
+engine = create_engine(url='mysql+pymysql://root:123456@47.103.54.72:3306/pythonDemo?charset=utf8', echo=True, future=True)
 # 把当前的引擎绑定给这个会话；
 # autocommit：是否自动提交 autoflush：是否自动刷新并加载数据库 bind：绑定数据库引擎
-Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+Session = sessionmaker(autocommit=False, autoflush=True, bind=engine)
 # 实例化
 session = Session()
 

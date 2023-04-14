@@ -7,13 +7,12 @@ var overview; //概览数据
 $(function () {
   //查询6个月的账单数据
   $.ajax({
-    url: "http://10.88.10.191:8082/billing", //请求的url地址
+    url: "http://127.0.0.1:8082/billing", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
     type: "GET", //请求方式
     success: function (req) {
-      console.log(req.data[0]);
       billing = req.data[0];
 
       /*#################    6个月的账单统计  #####################*/
@@ -31,14 +30,14 @@ $(function () {
         legend: {
           orient: "vertical",
           x: "left",
-          data: ["1月", "2月", "3月", "4月", "5月", "6月"],
+          data: ["1月信贷数额", "2月信贷数额", "3月信贷数额", "4月信贷数额", "5月信贷数额", "6月信贷数额"],
           textStyle: {
             color: "#fff",
           },
         },
         series: [
           {
-            name: "各月账单情况",
+            name: "信贷数额",
             type: "pie",
             radius: ["50%", "70%"],
             avoidLabelOverlap: false,
@@ -67,12 +66,12 @@ $(function () {
               },
             },
             data: [
-              { value: billing.january, name: "1月" },
-              { value: billing.february, name: "2月" },
-              { value: billing.march, name: "3月" },
-              { value: billing.april, name: "4月" },
-              { value: billing.may, name: "5月" },
-              { value: billing.june, name: "6月" },
+              { value: billing.january, name: "1月信贷数额" },
+              { value: billing.february, name: "2月信贷数额" },
+              { value: billing.march, name: "3月信贷数额" },
+              { value: billing.april, name: "4月信贷数额" },
+              { value: billing.may, name: "5月信贷数额" },
+              { value: billing.june, name: "6月信贷数额" },
             ],
           },
         ],
@@ -82,13 +81,13 @@ $(function () {
       }
     },
     error: function () {
-      alert("查找6个月的账单数据失败");
+      alert("查找信贷额度数据失败");
     },
   });
 
   //查询amt的账单数据
   $.ajax({
-    url: "http://10.88.10.191:8082/amt", //请求的url地址
+    url: "http://127.0.0.1:8082/amt", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
@@ -111,14 +110,14 @@ $(function () {
         legend: {
           orient: "vertical",
           x: "left",
-          data: ["AMT1", "AMT2", "AMT3", "AMT4", "AMT5", "AMT6"],
+          data: ["1月信贷支付", "2月信贷支付", "3月信贷支付", "4月信贷支付", "5月信贷支付", "6月信贷支付"],
           textStyle: {
             color: "#fff",
           },
         },
         series: [
           {
-            name: "AMT的状态",
+            name: "信贷支付",
             type: "pie",
             radius: ["50%", "70%"],
             avoidLabelOverlap: false,
@@ -147,12 +146,12 @@ $(function () {
               },
             },
             data: [
-              { value: amt.amt1, name: "AMT1" },
-              { value: amt.amt2, name: "AMT2" },
-              { value: amt.amt3, name: "AMT3" },
-              { value: amt.amt4, name: "AMT4" },
-              { value: amt.amt5, name: "AMT5" },
-              { value: amt.amt6, name: "AMT6" },
+              { value: amt.amt1, name: "1月信贷支付" },
+              { value: amt.amt2, name: "2月信贷支付" },
+              { value: amt.amt3, name: "3月信贷支付" },
+              { value: amt.amt4, name: "4月信贷支付" },
+              { value: amt.amt5, name: "5月信贷支付" },
+              { value: amt.amt6, name: "6月信贷支付" },
             ],
           },
         ],
@@ -162,19 +161,18 @@ $(function () {
       }
     },
     error: function () {
-      alert("查询amt的账单数据失败");
+      alert("查询信贷支付数据失败");
     },
   });
 
   //查询性别比例
   $.ajax({
-    url: "http://10.88.10.191:8082/sexual", //请求的url地址
+    url: "http://127.0.0.1:8082/sexual", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
     type: "GET", //请求方式
     success: function (req) {
-      console.log(req.data[0]);
       sexual = req.data[0];
       /*#################    项目人员信息状态  #####################*/
       var dom = document.getElementById("lytj");
@@ -191,7 +189,7 @@ $(function () {
         legend: {
           orient: "vertical",
           x: "left",
-          data: [],
+          data: []
         },
         series: [
           {
@@ -254,7 +252,7 @@ $(function () {
 
   //查询不同学历的违约情况
   $.ajax({
-    url: "http://10.88.10.191:8082/qualification", //请求的url地址
+    url: "http://127.0.0.1:8082/qualification", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
@@ -294,7 +292,7 @@ $(function () {
             },
             min: 0,
             max: 3500,
-            interval: 1000,
+            interval: 500,
             axisLabel: {
               textStyle: {
                 color: "#657c97",
@@ -406,13 +404,13 @@ $(function () {
       $("#yanjiusheng").text(qualification.qual3sum);
     },
     error: function () {
-      alert("查找不同学历的违约情况失败");
+      alert("查找不同学历的违约数据失败");
     },
   });
 
   //查询概览数据
   $.ajax({
-    url: "http://10.88.10.191:8082/overview", //请求的url地址
+    url: "http://127.0.0.1:8082/overview", //请求的url地址
     dataType: "json", // 接收json格式数据
     async: false, //请求是否异步，默认为异步，这也是ajax重要特性
     //data: { result: result }, //参数值
